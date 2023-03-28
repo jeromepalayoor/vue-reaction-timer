@@ -1,5 +1,7 @@
 <template>
-  <h1>Jerome's Reaction Timer Created With Vue.JS 3</h1>
+  <h1>Reaction Timer</h1>
+  <p>By Jerome</p>
+  <p>Created With Vue.js 3</p>
   <button @click="start" :disabled="isPlaying">Play</button>
   <Block v-if="isPlaying" :delay="delay" @end="endGame" />
   <Results v-if="showResults" :score="score" />
